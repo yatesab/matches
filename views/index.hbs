@@ -1,7 +1,28 @@
 <div id="index-splash">
   <a href="/create" class="button1">Create New Tournament</a>
 </div>
-<div>
-  <button onclick="/get-data">get</button>
-  {{ items }}
+<div id="tournament-section">
+  <h1>Tournaments</h1>
+  <ul id="tournament-list">
+  {{#each items}}
+    <li id="{{this._id}}" class="tournament-button animated" >
+      <div class="list-titles">
+        <div>Name:</div>
+        <div>Type:</div>
+        <div>Date:</div>
+        <div>Edit:</div>
+        <div>Delete:</div>
+      </div>
+      <div class="list-buttons">
+        <div><h2>{{this.name}}</h2></div>
+        <div>{{this.type}}</div>
+        <div>{{this.date}}</div>
+        <div><button onclick="location.href = '/tournaments/{{this._id}}'">edit</button></div>
+        <div><a onclick="removeTournament($(this).parent().parent())"><img class="delete-button" src="/images/delete.png" /></a></div>
+      </div>
+    </li>
+  {{/each}}
+</ul>
 </div>
+
+<script src="/javascripts/management.js"></script>
