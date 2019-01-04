@@ -1,19 +1,16 @@
 {
   "name": "matches",
-  "version": "1.0.0",
-  "description": "Tournament Software",
-  "main": "server.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yatesab/matches.git"
-  },
-  "author": "Andrew Yates",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yatesab/matches/issues"
-  },
-  "homepage": "https://github.com/yatesab/matches#readme"
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0"
+  }
 }
