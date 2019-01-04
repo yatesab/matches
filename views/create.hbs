@@ -1,21 +1,21 @@
 <div id="create-wrapper">
   <h1> Create A New Tournament </h1>
-  <form type="post" >
+  <form action="/create/insert" method="post">
     <table>
       <tr>
         <td><label for="name">Tournament Name:</label></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="name" name="name"></td>
       </tr>
       <tr>
         <td><label for="type">Type:</label></td>
         <td>
-          <select>
+          <select id="type" name="type">
             <option>Double Elimination</option>
             <option>Round Robin</option>
           </select>
         </td>
       </tr>
     </table>
-    <button>Create</button>
+    <button type="submit">Create</button>
   </form>
 </div>
