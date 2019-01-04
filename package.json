@@ -1,0 +1,19 @@
+{
+  "name": "matches",
+  "version": "1.0.0",
+  "description": "Tournament Software",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yatesab/matches.git"
+  },
+  "author": "Andrew Yates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yatesab/matches/issues"
+  },
+  "homepage": "https://github.com/yatesab/matches#readme"
+}
