@@ -25,15 +25,11 @@ $.fn.extend({
   },
 });
 
-$(document).ready(function() {
-  $('#tournament-list').sortable();
-})
-
 function removeTournament(obj) {
   var data = {
     'id': obj[0].id
   }
-
+  console.log(obj[0].id);
   $.post("/remove_one", data, function(info) {
     console.log(info);
       if(info.ok == 1 && info.n == 1){

@@ -17,8 +17,8 @@
         <div><h2>{{this.name}}</h2></div>
         <div>{{this.type}}</div>
         <div>{{this.date}}</div>
-        <div><button onclick="location.href = '/tournaments/{{this._id}}'">edit</button></div>
-        <div><a onclick="removeTournament($(this).parent().parent())"><img class="delete-button" src="/images/delete.png" /></a></div>
+        <div><a href="/tournaments/{{this._id}}"><img class="delete-button" src="/images/edit.png" /></a></div>
+        <div><a onclick="removeTournament($(this).parent().parent().parent())"><img class="delete-button" src="/images/delete.png" /></a></div>
       </div>
     </li>
   {{/each}}

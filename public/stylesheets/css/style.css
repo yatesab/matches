@@ -55,18 +55,19 @@ a {
 }
 #tournament-list {
   margin: 0px;
-  padding: 0px;
-  border-collapse: collapse;
-  display: grid;
-  grid-template-columns: 100%;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  padding: 10px 0px;
   list-style: none;
 }
 #tournament-list li {
   margin: 10px 20px;
   padding: 15px;
-  background: #999;
+  background: #666;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#tournament-list li:hover {
+  background: #aaa;
 }
 .list-columns {
   display: grid;
@@ -81,7 +82,7 @@ a {
   grid-template-columns: 35% 35% 10% 10% 10%;
   align-items: center;
   justify-items: center;
-  height: 75px;
+  height: 50px;
 }
 #create-wrapper {
   padding: 40px 20px;
